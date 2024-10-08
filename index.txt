@@ -1,0 +1,123 @@
+Question 1: Explain what JavaScript is and its role in web development.
+Ans… javascript is an interpreted programming language used in web development to create websites. 
+           Javascript used logical functions. We use javascript for the logical part. Just like if we                                                                    want to click on a button and show some logic ( e.g dark background or coloured background ) then we use javascript.
+
+
+Role of javascript in web development :-  
+Adding interactive: javascript allows to create a responsive web page that creates interactive , like form submission , click. 
+Form validation: JavaScript helps validate user input in forms, ensuring data accuracy and preventing errors.
+Mobile and desktop app development: JavaScript frameworks like React Native and Electron enable developers to build cross-platform mobile and desktop applications using JavaScript.
+
+
+Question 2: Explain the key differences between JavaScript and HTML. Provide examples of situations where you would use each.
+Ans…the key differences between javascript and html is not a programming language, it is a hypertext markup language.  And javascript is an interpreted programming language. 
+
+We use html and javascript to create a web page. 
+Html use e.g.:  html used to create heading and para buttons many more of using elements and attributes. 
+
+If we see in the below example of javascript : it use element of heading h2,
+First we use opening tag <h2> and middle we write content , or something we want to give the heading of our page , then we use closing tag </h2>.
+
+
+Javascript use e.g:  javascript use to display such property of click button. 
+    We create a button in a body of html.  Inside a button write type=”button” and onclick="document.getElementById('demo').innerHTML = Date()">
+
+Like this :<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+To write this code then we click the button showing the browser ,, it shows date and time of running currently. This function is only shown because we use javascript, the heading is shown because we write html.
+
+Question 3: List and describe the five primitive data types in JavaScript.
+Ans. in the javascript there are seven primitive data types. Primitive data type are immutable.
+ String, number, boolean, bigInt , symbol, null , undefined.
+
+1.string: we write string in this “ ” sign. We always use this sign when writing a string. Inside this sign we write anything, number or word.
+2. Number : we write any number such as: 5,4. , without using any sign. If we write a number in string “ ” ,its data type will be the string.  Browser assumes that it is a string not a number because we write in this sign " ".
+3. Boolean : it’s true or false. We use boolean when we want comparison. 
+4. Null : it is empty. We don’t know what's inside.
+5. Undefined: it is also shown empty. But there is something of value or string , We don’t know what's inside., it's undefined. 
+
+
+
+Question 4: What is the purpose of declaring variables in JavaScript, and how do you declare them using the 'let' keyword?
+Ans. the purpose of declaring variables in javascript, it is easy to handle things. It’s good for readability purposes also. E.g. we have some value, or string or number. If we write like this
+Pen =  red;
+Pen is a key and the red is a value of pen. 
+In javascript we have three variables : var, let , const. If we use any of these variables, it depends upon properties, because everyone has a different property. Var has a global scope. Let & const are block scope: Variables declared with let must be Declared before use Variables declared with let cannot be Redeclared in the same scope. 
+
+Using let variables :  if we use let variables to declare keywords, it’s a block scope.  Any thing we write in the using let variable and write a return function, it will execute when we called it, e.g
+{
+ let x = 2;
+}
+// x can not be use here
+ You can not redeclare the variable accidentally.
+You can not do this:- 
+let x = "John Doe";
+let x = 0;
+.
+
+
+
+
+
+
+Question 5: Explain the importance of comments in JavaScript and provide examples of single-line and multi-line comments.
+
+Ans.. we use comments when we want to write something important . if we write a comment in javascript it will not affect the main page in the browser. We want an explanation or short note.
+
+Write single line comments: 
+       Like we write var with key value pair, after add // this sign and some comment . whatever we write after // this sign it will not execute. This is a single line comment.
+
+ E.g  var pen = red ; // write comment of using // sign
+
+Write double line comments: 
+       Like we write var with key value pair, after add   /*  */  this sign and some comments . whatever we write inside /*   write comments here inside this sign */   this sign it will not execute. This is a double line comment.
+
+/*   E.g  var pen = red ; 
+        var pen2 = yellow;
+         Var pen3 =  pink;   */  it will not execute inside this sign whatever we write.
+
+
+Question 6: Explain the importance of choosing meaningful and descriptive variable names in JavaScript.
+Provide an example where using a clear identifier improves code readability.
+
+Ans..  There are three variables in javascript.  Var is the first we use before 2015. After 2015 we use  var, let & const. We use most of the time let and const because of readability purpose. 
+Var is a global scope. 
+Variable declare var inside { } block can be accessed from outside the block.
+{
+Var  x = 3;
+} //  x can be used here.
+Let & const are the block scope .
+
+Variable declare let & const inside { } block can not  be accessed from outside the block.
+{
+let  x = 3;
+} //  x can’t be used here.
+{
+const x = 3;
+} //  x can’t be used here.
+
+Of using var you can redeclare the variable , but of using let and const you can’t redeclare the variable.
+With let and const you can’t do this.
+let x = “ john deo”;
+let x = 4;
+
+With var you can do this.
+var  x = “ john deo”;
+var  x = 4;
+
+Let and const have a block scope.
+Let and const can not be redeclare
+Let and const must be declared before use.
+Let and const not blind to this.
+Let and const are not hoisted.
